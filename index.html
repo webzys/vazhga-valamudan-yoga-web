@@ -13,15 +13,470 @@
     <!-- <meta property="og:type" content="website" /> -->
     <!-- <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
 
-    <!-- <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div id="root"></div>
+    <!-- Header -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-90 shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-primary" href="#home">
+            <span class="en-text">Vazhga Valamudan Yoga Center</span>
+            <span class="ta-text d-none">வாழ்க வளமுடன் யோகா மையம்</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">
+                  <span class="en-text">Home</span>
+                  <span class="ta-text d-none">முகப்பு</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  <span class="en-text">About</span>
+                  <span class="ta-text d-none">எங்களைப் பற்றி</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#programs">
+                  <span class="en-text">Programs</span>
+                  <span class="ta-text d-none">நிகழ்ச்சிகள்</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  <span class="en-text">Contact</span>
+                  <span class="ta-text d-none">தொடர்பு</span>
+                </a>
+              </li>
+              <li class="nav-item ms-2">
+                <button id="languageToggle" class="btn btn-outline-primary btn-sm">
+                  <i class="bi bi-globe me-1"></i>
+                  <span class="en-text">தமிழ்</span>
+                  <span class="ta-text d-none">English</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="overlay"></div>
+      <div class="container text-center text-white position-relative z-3">
+        <div class="animate-fade-in">
+          <h1 class="display-4 fw-bold mb-4">
+            <span class="en-text">Vazhga Valamudan Yoga Center</span>
+            <span class="ta-text d-none">வாழ்க வளமுடன் யோகா மையம்</span>
+          </h1>
+          
+          <p class="lead mb-4">
+            <span class="en-text">Inspired by the Teachings of Yogiraj Vethathiri Maharishi (1911 - 2006)</span>
+            <span class="ta-text d-none">யோகி மற்றும் தத்துவஞானி வேதாத்திரி மகரிஷி (14 ஆகஸ்ட் 1911 – 28 மார்ச் 2006) அவர்களின் கற்றல்களை வழிகாட்டியாகக் கொண்டது</span>
+          </p>
+          
+          <div class="divider-accent mx-auto mb-4"></div>
+          
+          <p class="fs-5 mb-5">
+            <span class="en-text">Balance the Body, Mind & Life Energy through Simplified Kundalini Yoga (SKY Yoga)</span>
+            <span class="ta-text d-none">தெளிவான மனம் – நலமான உடல் – ஒத்திசைந்த ஆன்மா!</span>
+          </p>
+          
+          <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+            <a href="#programs" class="btn btn-accent btn-lg">
+              <span class="en-text">Our Programs</span>
+              <span class="ta-text d-none">நிகழ்ச்சிகள்</span>
+            </a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">
+              <span class="en-text">Contact Us</span>
+              <span class="ta-text d-none">தொடர்பு கொள்ளுங்கள்</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom-fade"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h2 class="section-heading mb-4">
+              <span class="en-text">About Us</span>
+              <span class="ta-text d-none">எங்களைப் பற்றி</span>
+            </h2>
+            
+            <p class="text-muted mb-4 fs-5">
+              <span class="en-text">
+                At Vazhga Valamudan Yoga Center, we are dedicated to spreading the life-transforming teachings of Shri Vethathiri Maharishi – a revered Indian philosopher, spiritual leader, and founder of Simplified Kundalini Yoga (SKY).
+              </span>
+              <span class="ta-text d-none">
+                வாழ்க வளமுடன் யோகா மையம், வேதாத்திரி மகரிஷி அவர்களின் ஆன்மிகக் கற்பனைகளை அடிப்படையாகக் கொண்டு இயங்கும் யோகா மையமாகும்.
+              </span>
+            </p>
+            
+            <div class="bg-light border-start border-4 border-primary p-4 rounded-end mb-4">
+              <p class="fst-italic text-primary mb-2 fs-5">
+                <span class="en-text">"When the mind is clear and the body is healthy, the soul shines brighter."</span>
+                <span class="ta-text d-none">"மனம் தெளிவாக இருந்தால், உடல் ஆரோக்கியமாக இருக்கும்; ஆன்மா ஒளிரும்."</span>
+              </p>
+              <p class="fw-medium">
+                <span class="en-text">- Vethathiri Maharishi</span>
+                <span class="ta-text d-none">- வேதாத்திரி மகரிஷி</span>
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 position-relative">
+            <div class="position-absolute inset-0 bg-primary bg-opacity-20 rounded transform-rotate"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" 
+              alt="Vethathiri Maharishi" 
+              class="img-fluid rounded shadow-lg position-relative z-index-1"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-heading text-center mb-5">
+          <span class="en-text">Our Programs</span>
+          <span class="ta-text d-none">எங்கள் சேவைகள்</span>
+          <span class="divider-accent d-block mx-auto mt-2"></span>
+        </h2>
+        
+        <div class="row g-4">
+          <!-- Program 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 program-card">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <i class="bi bi-flower2 fs-3"></i>
+                </div>
+                <h3 class="card-title h5 text-primary">
+                  <span class="en-text">Simplified Physical Exercises</span>
+                  <span class="ta-text d-none">எளிய உடற்பயிற்சிகள்</span>
+                </h3>
+                <p class="card-text text-muted">
+                  <span class="en-text">A system of simple yet effective exercises that promote physical wellbeing and prepare the body for meditation.</span>
+                  <span class="ta-text d-none">உடல் நலத்தையும் தியானத்திற்கு தயார்படுத்தும் எளிய ஆனால் பயனுள்ள உடற்பயிற்சிகள்.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Program 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 program-card">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <i class="bi bi-activity fs-3"></i>
+                </div>
+                <h3 class="card-title h5 text-primary">
+                  <span class="en-text">Kundalini Meditation</span>
+                  <span class="ta-text d-none">குண்டலினி தியானம்</span>
+                </h3>
+                <p class="card-text text-muted">
+                  <span class="en-text">Learn to awaken and channel your life energy through simple meditation techniques.</span>
+                  <span class="ta-text d-none">எளிய தியான முறைகள் மூலம் உங்கள் வாழ்க்கை சக்தியை உணர்த்தி வழிநடத்த கற்றுக்கொள்ளுங்கள்.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Program 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 program-card">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <i class="bi bi-tree fs-3"></i>
+                </div>
+                <h3 class="card-title h5 text-primary">
+                  <span class="en-text">Kayakalpa Yoga</span>
+                  <span class="ta-text d-none">காயகல்ப யோகம்</span>
+                </h3>
+                <p class="card-text text-muted">
+                  <span class="en-text">Ancient techniques to enhance vitality and maintain youthfulness through specific breathing practices.</span>
+                  <span class="ta-text d-none">குறிப்பிட்ட சுவாசப் பயிற்சிகள் மூலம் உயிர்ப்பை மேம்படுத்தி இளமையை பேணும் பண்டைய நுட்பங்கள்.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Program 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 program-card">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <i class="bi bi-search fs-3"></i>
+                </div>
+                <h3 class="card-title h5 text-primary">
+                  <span class="en-text">Introspection Courses</span>
+                  <span class="ta-text d-none">சிந்தனைக் பயிற்சிகள்</span>
+                </h3>
+                <p class="card-text text-muted">
+                  <span class="en-text">Develop self-awareness and emotional intelligence through guided introspection practices.</span>
+                  <span class="ta-text d-none">வழிகாட்டப்பட்ட சுய ஆய்வு பயிற்சிகள் மூலம் சுய விழிப்புணர்வு மற்றும் உணர்ச்சி நுண்ணறிவு வளர்க்கப்படும்.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Program 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 program-card">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <i class="bi bi-heart fs-3"></i>
+                </div>
+                <h3 class="card-title h5 text-primary">
+                  <span class="en-text">Wellness and Lifestyle Counseling</span>
+                  <span class="ta-text d-none">வாழ்க்கை நல ஆலோசனைகள்</span>
+                </h3>
+                <p class="card-text text-muted">
+                  <span class="en-text">Personalized guidance on integrating spiritual practices into your daily life for overall wellbeing.</span>
+                  <span class="ta-text d-none">ஒட்டுமொத்த நலனுக்காக உங்கள் தினசரி வாழ்க்கையில் ஆன்மீக நடைமுறைகளை ஒருங்கிணைப்பதற்கான தனிப்பயனாக்கப்பட்ட வழிகாட்டுதல்.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Program 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 program-card">
+              <div class="card-body">
+                <div class="text-primary mb-3">
+                  <i class="bi bi-people fs-3"></i>
+                </div>
+                <h3 class="card-title h5 text-primary">
+                  <span class="en-text">Workshops & Retreats</span>
+                  <span class="ta-text d-none">வகுப்புகள் மற்றும் ஒருநாள் முகாம்கள்</span>
+                </h3>
+                <p class="card-text text-muted">
+                  <span class="en-text">Immersive experiences to deepen your yoga practice and connect with like-minded practitioners.</span>
+                  <span class="ta-text d-none">உங்கள் யோகா பயிற்சியை ஆழப்படுத்தவும், ஒரே மனநிலை கொண்ட பயிற்சியாளர்களுடன் இணைவதற்கும் ஆழ்ந்த அனுபவங்கள்.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5 text-muted fst-italic">
+          <span class="en-text">All courses follow methods described on Vethathiri.edu.in and are conducted by certified SKY Yoga instructors.</span>
+          <span class="ta-text d-none">https://www.vethathiri.edu.in/pages/sky-yoga இல் குறிப்பிடப்பட்டுள்ள முறைகளைக் கடைப்பிடித்து, பயிற்சியறிஞர்களால் வகுப்புகள் நடத்தப்படும்.</span>
+        </div>
+        
+        <div class="lotus-divider mt-5"></div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <h2 class="section-heading text-center mb-5">
+          <span class="en-text">Contact Us</span>
+          <span class="ta-text d-none">தொடர்பு கொள்ளுங்கள்</span>
+          <span class="divider-accent d-block mx-auto mt-2"></span>
+        </h2>
+        
+        <div class="row g-4 justify-content-center">
+          <!-- Contact Information -->
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <!-- Location -->
+              <div class="col-md-12">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                        <i class="bi bi-geo-alt text-primary"></i>
+                      </div>
+                      <div>
+                        <h3 class="h5 mb-3">
+                          <span class="en-text">Our Location</span>
+                          <span class="ta-text d-none">இருப்பிடம்</span>
+                        </h3>
+                        <address class="text-muted mb-0">
+                          <span class="en-text">
+                            Vazhga Valamudan Yoga Center<br>
+                            123 Yoga Street, Peace Garden<br>
+                            Chennai, Tamil Nadu - 600001<br>
+                            (Near Central Park)
+                          </span>
+                          <span class="ta-text d-none">
+                            வாழ்க வளமுடன் யோகா மையம்<br>
+                            123 யோகா தெரு, அமைதி பூங்கா<br>
+                            சென்னை, தமிழ்நாடு - 600001<br>
+                            (சென்ட்ரல் பார்க் அருகில்)
+                          </span>
+                        </address>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Phone -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                        <i class="bi bi-telephone text-primary"></i>
+                      </div>
+                      <div>
+                        <h3 class="h5 mb-3">
+                          <span class="en-text">Phone</span>
+                          <span class="ta-text d-none">தொலைபேசி</span>
+                        </h3>
+                        <p class="text-muted mb-0">
+                          <a href="tel:+919876543210" class="text-decoration-none">+91 98765 43210</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Email -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                        <i class="bi bi-envelope text-primary"></i>
+                      </div>
+                      <div>
+                        <h3 class="h5 mb-3">
+                          <span class="en-text">Email</span>
+                          <span class="ta-text d-none">மின்னஞ்சல்</span>
+                        </h3>
+                        <p class="text-muted mb-0">
+                          <a href="mailto:info@vazhgavalamudanyoga.com" class="text-decoration-none">info@vazhgavalamudanyoga.com</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Hours -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <div class="bg-primary bg-opacity-10 p-3 rounded-circle me-3">
+                        <i class="bi bi-clock text-primary"></i>
+                      </div>
+                      <div>
+                        <h3 class="h5 mb-3">
+                          <span class="en-text">Hours</span>
+                          <span class="ta-text d-none">நேரம்</span>
+                        </h3>
+                        <p class="text-muted mb-0">
+                          <span class="en-text">6:00 AM - 8:00 PM (All Days)</span>
+                          <span class="ta-text d-none">காலை 6:00 - இரவு 8:00 (அனைத்து நாட்களும்)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Social Media -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-body">
+                    <h3 class="h5 mb-3">
+                      <span class="en-text">Follow Us</span>
+                      <span class="ta-text d-none">பின்தொடருங்கள்</span>
+                    </h3>
+                    <div class="d-flex gap-3">
+                      <a href="#" class="btn btn-outline-primary rounded-circle">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a href="#" class="btn btn-outline-primary rounded-circle">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a href="#" class="btn btn-outline-primary rounded-circle">
+                        <i class="bi bi-whatsapp"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Map -->
+          <div class="col-lg-6">
+            <div class="rounded-3 overflow-hidden shadow-lg h-100 min-h-400">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.8485792944396!2d80.24015281535862!3d13.048476990806084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52664274db2e9f%3A0xf514c8eb9e39ab0e!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1649015345719!5m2!1sen!2sus" 
+                class="w-100 h-100"
+                style="border: 0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                title="Map to Vazhga Valamudan Yoga Center">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="h4 mb-3">
+            <span class="en-text">Join the Journey Within</span>
+            <span class="ta-text d-none">உள்ளே பயணத்தில் இணையுங்கள்</span>
+          </h2>
+          
+          <p class="text-white-80 mb-0">
+            <span class="en-text">Whether you are a beginner or looking to deepen your practice, we welcome you to experience the holistic path of SKY Yoga.</span>
+            <span class="ta-text d-none">நீங்கள் ஒரு தொடக்கநிலையாளராக இருந்தாலும் அல்லது உங்கள் பயிற்சியை ஆழப்படுத்த விரும்பினாலும், SKY யோகாவின் ஒருங்கிணைந்த பாதையை அனுபவிக்க உங்களை வரவேற்கிறோம்.</span>
+          </p>
+        </div>
+        
+        <div class="border-top border-white border-opacity-20 pt-4 pb-3">
+          <div class="text-center text-white-60 small">
+            <span class="en-text">© 2025 Vazhga Valamudan Yoga Center. All rights reserved.</span>
+            <span class="ta-text d-none">© 2025 வாழ்க வளமுடன் யோகா மையம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
