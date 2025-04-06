@@ -3,7 +3,7 @@ import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
-  Yoga, 
+  Lotus, 
   Brain, 
   Leaf, 
   Search, 
@@ -17,7 +17,7 @@ const Programs = () => {
   const programs = [
     {
       id: 'simplifiedExercises',
-      icon: <Yoga className="h-8 w-8 text-yoga-primary" />,
+      icon: <Lotus className="h-8 w-8 text-yoga-primary" />,
     },
     {
       id: 'kundalini',
